@@ -166,5 +166,11 @@ public class Main {
         } else{
             System.out.println("False");
         }
+
+        try {
+            reader.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
